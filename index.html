@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flags</title>
+    <style>
+       
+       .container {
+           background-color: red;
+           height: 800px;
+           width: 1100px;
+           position: relative;
+        }
+
+        .container > .horizontal {
+            background-color: white;
+            height: 100%;
+            width: 200px;
+            position: absolute;
+            left: 450px;
+        }
+
+        .container > .vertical {
+            background-color: white;
+            height: 200px;
+            width: 100%;
+            position: absolute;
+            top: 300px;
+        }
+
+        .container > .horizontal_inner {
+            background-color: rgb(0, 40, 104);
+            height: 100%;
+            width: 100px;
+            position: absolute;
+            left: 500px;
+        }
+
+        .container > .vertical_inner {
+            background-color: rgb(0, 40, 104);
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            top: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Norway Flag</h1>
+    <div class="container">
+        <div class="horizontal"></div>
+        <div class="vertical"></div>
+        <div class="horizontal_inner"></div>
+        <div class="vertical_inner"></div>
+
+    </div>
+</body>
+</html>
